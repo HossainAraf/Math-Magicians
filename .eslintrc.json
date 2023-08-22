@@ -6,19 +6,28 @@
   },
   "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 2021, // Update to the appropriate ECMAScript version
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["airbnb-base"],
+  "extends": ["airbnb", "plugin:react/recommended", "plugin:react-hooks/recommended"],
+  "plugins": ["react"],
   "rules": {
-    "no-shadow": "off",
-    "no-param-reassign": "off",
-    "eol-last": "off",
-    "import/extensions": ["error", {
-      "js": "always",
-      "json": "always"
-    }]
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "import/no-unresolved": "off",
+    "no-shadow": "off"
   },
+  "overrides": [
+    {
+       // feel free to replace with your preferred file pattern - eg. 'src/**/*Slice.js' or 'redux/**/*Slice.js'
+      "files": ["src/**/*Slice.js"],
+      // avoid state param assignment
+      "rules": { "no-param-reassign": ["error", { "props": false }] }
+    }
+  ],
   "ignorePatterns": [
     "dist/",
     "build/"
