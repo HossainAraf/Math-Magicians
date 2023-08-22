@@ -1,14 +1,17 @@
+/* eslint-disable no-unused-vars */
+// eslint-disable-next-line import/no-unresolved
 import React from 'react';
+// eslint-disable-next-line import/no-unresolved
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App.js';
+import reportWebVitals from './reportWebVitals.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
