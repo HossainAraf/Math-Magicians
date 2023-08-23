@@ -1,0 +1,20 @@
+.calculator-wrapper {
+  margin: 3%;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.display {
+  background-color: #858694;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2%;
+}
+
+.operator {
+  display: grid;
+  grid-template-columns: repeat(4, 5em);
+  height: calc(35vh - 10px);
+}
