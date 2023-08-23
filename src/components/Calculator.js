@@ -10,7 +10,7 @@ const Calculator = () => (
         <Button label="AC" />
         <Button label="+/-" />
         <Button label="%" />
-        <Button className="operator-right-column" label="/" />
+        <Button className="operator-right-column" label="÷" />
         <Button label="7" />
         <Button label="8" />
         <Button label="9" />
