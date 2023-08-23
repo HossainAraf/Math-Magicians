@@ -18,3 +18,16 @@
   grid-template-columns: repeat(4, 5em);
   height: calc(35vh - 10px);
 }
+
+.zero-btn {
+  grid-column: span 2;
+}
+
+.operator-right-column {
+  background-color: #f5913e;
+}
+
+button {
+  background-color: #e0e0e0;
+  border: 0.02px solid #fff;
+}
