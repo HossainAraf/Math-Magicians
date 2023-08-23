@@ -1,9 +1,12 @@
+import React from 'react';
 import './App.css';
+import Calculator from './components/Calculator'; // Import the Calculator component
 
 function App() {
   return (
     <div className="App">
-      <h1> React  </h1>
+      {/* Add the Calculator component here */}
+      <Calculator />
     </div>
   );
 }
