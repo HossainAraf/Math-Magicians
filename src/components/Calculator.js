@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../styles/calculator.css';
 
 const Calculator = () => (
   <div className="calculator-wrapper">
