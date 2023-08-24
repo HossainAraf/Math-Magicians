@@ -30,15 +30,16 @@
 
 button {
   background-color: #e0e0e0;
-  border: 0.02px solid #d3ddcd;
+  border: 0.02px solid #fff;
   width: 100%;
   height: 100%;
+  font-size: 1em;
 }
 
 .display .next {
   align-self: flex-end;
   margin: 0;
-  background-color: rgb(27, 15, 27);
+  background-color: rgb(29, 17, 29);
 }
 
 .display .total {
