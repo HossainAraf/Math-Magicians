@@ -10,7 +10,7 @@ const Button = ({ label, onClick, className }) => (
 Button.propTypes = {
   label: PropTypes.string.isRequired, // Validate label as a required string
   onClick: PropTypes.func.isRequired, // Validate onClick as a required function
-  className: PropTypes.string, // className is optional
+  className: PropTypes.string,
 };
 
 Button.defaultProps = {
