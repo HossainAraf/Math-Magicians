@@ -12,6 +12,12 @@ const Calculator = () => {
     operation: null,
   });
 
+  const handleButtonClick = (buttonName) => {
+    const newData = calculate(calculatorData, buttonName);
+    setCalculatorData(newData);
+    setDisplay(newData.next || '0');
+  };
+
   return (
     <div className="calculator-wrapper">
       <div className="calculator">
