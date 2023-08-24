@@ -19,13 +19,13 @@ const Calculator = () => {
     // setDisplay(newData.next || '0');
   };
 
+  const displayValue = calculatorData.next || calculatorData.total || '0';
+
   return (
     <div className="calculator-wrapper">
       <div className="calculator">
         <div className="display">
-          {calculatorData.next && <div className="next">{calculatorData.next}</div>}
-          {calculatorData.total && <div className="total">{calculatorData.total}</div>}
-          {!calculatorData.next && !calculatorData.total && '0'}
+          {displayValue}
         </div>
         <div className="operator">
           <Button label="AC" onClick={() => handleButtonClick('AC')} />
