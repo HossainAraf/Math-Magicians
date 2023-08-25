@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       {/* Quotes are Displayed here */}
       <JokeComponent />
-      {/* <button onClick={} type="button">Click me</button> */}
       {/* Add the Calculator component here */}
       <Calculator />
     </div>
