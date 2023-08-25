@@ -1,0 +1,16 @@
+#display-joke {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#display-joke h4 {
+  color: #fff;
+  font-family: cursive;
+}
+
+#display-joke p {
+  color: #004;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 1.5%;
+}

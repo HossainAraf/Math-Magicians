@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../styles/display-quote.css';
 
 const JokeComponent = () => {
   const [joke, setJoke] = useState(null);
@@ -37,8 +38,8 @@ const JokeComponent = () => {
         </div>
       )}
       {joke && (
-        <div>
-          <p>Joke of the Day:</p>
+        <div id="display-joke">
+          <h4>Joke of the Day:</h4>
           <p>{joke}</p>
         </div>
       )}

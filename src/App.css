@@ -1,8 +1,16 @@
 * {
-  margin: auto;
+  margin: 0;
 }
 
 #logo {
-  margin: 3%;
+  margin-left: 3%;
+  margin-top: 3%;
   width: 4%;
+}
+
+.App {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
 }
