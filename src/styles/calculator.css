@@ -1,6 +1,6 @@
 .calculator-wrapper {
-  margin: 3%;
-  padding: 10%;
+  margin-right: 5%;
+  padding: 1%;
   display: flex;
   justify-content: center;
 }
