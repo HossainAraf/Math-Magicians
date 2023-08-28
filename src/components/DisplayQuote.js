@@ -3,6 +3,7 @@ import '../styles/display-quote.css';
 
 const QuoteComponent = () => {
   const [quote, setQuote] = useState(null);
+  const [author, setAuthor] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -20,6 +21,7 @@ const QuoteComponent = () => {
         const response = await fetch(apiURL, options);
         const data = await response.json();
         setQuote(data[0].quote);
+        setAuthor(data[0].author);
         // console.log(data[0]);
       } catch (error) {
         setError(true);
@@ -39,9 +41,10 @@ const QuoteComponent = () => {
         </div>
       )}
       {quote && (
-        <div id="display-joke">
+        <div id="display-quote">
           <h4>Quote:</h4>
           <p>{quote}</p>
+          <p id="author">{author}</p>
         </div>
       )}
     </div>
