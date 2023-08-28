@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/display-quote.css';
 
-const JokeComponent = () => {
-  const [joke, setJoke] = useState(null);
+const QuoteComponent = () => {
+  const [quote, setQuote] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   useEffect(() => {
     const myAPIKey = 'Ixgm2cYnlo7wGSvmiMQCVvfUJ6kVeTvgNZShaXEC';
-    const apiURL = 'https://api.api-ninjas.com/v1/jokes? limit=1';
+    const apiURL = 'https://api.api-ninjas.com/v1/quotes?';
 
     const options = {
       method: 'GET',
@@ -19,7 +19,8 @@ const JokeComponent = () => {
       try {
         const response = await fetch(apiURL, options);
         const data = await response.json();
-        setJoke(data[0].joke);
+        setQuote(data[0].quote);
+        // console.log(data[0]);
       } catch (error) {
         setError(true);
       }
@@ -37,14 +38,14 @@ const JokeComponent = () => {
           {/* <p>{error}</p> */}
         </div>
       )}
-      {joke && (
+      {quote && (
         <div id="display-joke">
-          <h4>Joke of the Day:</h4>
-          <p>{joke}</p>
+          <h4>Quote:</h4>
+          <p>{quote}</p>
         </div>
       )}
     </div>
   );
 };
 
-export default JokeComponent;
+export default QuoteComponent;
