@@ -15,3 +15,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 1.5%;
 }
+
+#display-quote #author {
+  color: #463535;
+}
