@@ -4,7 +4,7 @@ import NavStyles from '../styles/Navbar.module.css';
 
 const Navbar = () => (
   <nav className={NavStyles.nav}>
-    <h3>Math Magicians</h3>
+    <h1>Math Magicians</h1>
     <ul className={NavStyles.ul}>
       <li><Link to="/">Home</Link></li>
       <li><Link to="/calculator">Calculator</Link></li>

@@ -2,15 +2,16 @@ import React from 'react';
 
 const Home = () => (
   <>
-    <h1 style={{
+    <h3 style={{
       padding: '20px 0',
-      lineHeight: '1.5em',
-      color: '#aeadad',
+      lineHeight: '1.9em',
+      color: '#fff',
       textAlign: 'center',
+      fontSize: '16px',
     }}
     >
       Welcome to our Page!
-    </h1>
+    </h3>
     <p>
       Discover a world of numbers and inspiration at Math Magicians.
       Our website offers you two fantastic tools: a feature-rich calculator
@@ -33,10 +34,6 @@ const Home = () => (
       Explore Math Magicians and make math enjoyable and inspirational.
       Dive into the world of numbers and humor all in one place. Thank you for
       choosing Math Magicians for your daily mathematical needs and laughs.
-    </p>
-    <p>
-      Feel free to customize this description to fit your website&apos;s personality
-      and message.
     </p>
   </>
 );
