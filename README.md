@@ -24,6 +24,8 @@
 ## 📖 Math Magicians
 **Math Magicians** is a front-end application which does contain different navigation for diferent pages and any person can use the calculator for calculations and generate a random quote.
 
+ 📗 [Live Demo](https://math-magicians-fecq.onrender.com)
+
 ## 🛠 Built With <a name="built-with">React</a>
 
 ### Tech Stack <a name="tech-stack"></a>
