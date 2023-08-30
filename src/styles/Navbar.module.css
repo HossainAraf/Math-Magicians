@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100vh;
+  margin: 3% 1%;
+  margin-top: 0.1%;
+}
+
+h1 {
+  color: rgb(174, 173, 173);
+  font-family: cursive;
+}
+
+.nav .ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav .ul li {
+  margin-right: 15%;
+}
+
+.nav .ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav .ul li a:hover {
+  color: rgba(195, 13, 13, 0.753);
+  font-size: 1.3rem;
+}

@@ -20,8 +20,11 @@ const QuoteComponent = () => {
       try {
         const response = await fetch(apiURL, options);
         const data = await response.json();
-        setQuote(data[0].quote);
-        setAuthor(data[0].author);
+
+        setTimeout(() => {
+          setQuote(data[0].quote);
+          setAuthor(data[0].author);
+        }, 1000);
         // console.log(data[0]);
       } catch (error) {
         setError(true);
