@@ -4,6 +4,7 @@ import './App.css';
 import Calculator from './components/Calculator';
 import QuoteComponent from './components/DisplayQuote';
 import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Calculator />} />
-          <Route path="/quote" element={<QuoteComponent />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/quote" element={<QuoteComponent />} />
+          <Route exact path="/calculator" element={<Calculator />} />
         </Routes>
       </Router>
     </div>
