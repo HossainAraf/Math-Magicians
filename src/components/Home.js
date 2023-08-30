@@ -2,7 +2,15 @@ import React from 'react';
 
 const Home = () => (
   <>
-    <h1>Welcome to Math Magicians!</h1>
+    <h1 style={{
+      padding: '20px 0',
+      lineHeight: '1.5em',
+      color: '#aeadad',
+      textAlign: 'center',
+    }}
+    >
+      Welcome to our Page!
+    </h1>
     <p>
       Discover a world of numbers and inspiration at Math Magicians.
       Our website offers you two fantastic tools: a feature-rich calculator
