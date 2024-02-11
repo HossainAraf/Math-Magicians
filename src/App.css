@@ -2,12 +2,6 @@
   margin: 0;
 }
 
-#logo {
-  margin-left: 3%;
-  margin-top: 3%;
-  width: 4%;
-}
-
 .App {
   display: flex;
   flex-direction: column;

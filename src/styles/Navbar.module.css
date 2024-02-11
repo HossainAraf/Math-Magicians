@@ -6,6 +6,11 @@
   margin-top: 0.1%;
 }
 
+.nav img {
+  width: 2rem;
+  border-radius: 50%;
+}
+
 h1 {
   color: rgb(174, 173, 173);
   font-family: cursive;
