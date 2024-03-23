@@ -37,7 +37,7 @@
 
 ### Key Features <a name="key-features">
 
-- A single page front-end application.
+- A single page front-end application(SPA).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
